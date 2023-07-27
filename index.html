@@ -40,59 +40,53 @@
 </head>
 <body class="font-lato">
     <header class="max-w-screen-xl mx-auto">
-        <!-- nav-ber section -->
-        <div class="navbar bg-[#ffff] md:bg-[#F85559] lg: bg-[#F85559] lg:rounded-full px-5 py-4 my-5 lg:my-12 flex items-center">
-          <div class="navbar-start lg:navbar-center border-2">
-                 
-            <div><img src="./images/logo.png" alt="logo"></div>
-             <div> <a class="btn btn-ghost normal-case text-2xl lg:text-4xl font-bold text-black lg:text-[#FFFFFF] ">Fruit Burst</a></div>
-        </div>
-
-            <div class="navbar-end md:navbar-start lg:navbar-start border-2">
-               <div class="dropdown sm:hidden">
-                <label tabindex="0" class="btn btn-ghost btn-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[3] p-2 shadow bg-base-100 rounded-box">
-                  <li><a>Home</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
-                </ul>
-              </div> 
-                <div class="navbar-start hidden lg:navbar-start lg:flex lg:text-left lg:p-0">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>  
-                  </ul>
-                  
-                </div>
-             
-            </div>
+         <!-- nav-ber section -->
+         <div class="navbar bg-[#F85559] border-0 rounded-full px-5 py-4 my-12 flex items-center">
+        
+          <div class="navbar-start">
+            <div class="dropdown sm:hidden">
+             <label tabindex="0" class="btn btn-ghost btn-circle">
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+             </label>
+             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[0] p-2 shadow bg-base-100 rounded-box">
+               <li><a>Home</a></li>
+               <li><a>About Us</a></li>
+               <li><a>Shop</a></li>
                
+             </ul>
+           </div> 
+           <div class="navbar-start hidden md:flex lg:flex-col">
+             <ul class="menu menu-horizontal px-1">
+               <li><a>Home</a></li>
+               <li><a>About Us</a></li>
+               <li><a>Shop</a></li> 
+             </ul>
 
+           </div>
+         </div>
+         <div class="navbar-center">
 
+             <div><img src="./images/logo.png" alt="logo"></div>
+              <div> <a class="btn btn-ghost normal-case text-4xl font-bold text-[#FFFFFF] ">Fruit Burst</a></div>
+         </div>
+         
+          <div class="navbar-end">
+               <div class="flex justify-end items-center"><input type="text" placeholder="Search here" class="border-0 rounded-full py-4 pl-7 w-full bg-[#FFFFFF] relative"/>
 
-            <div class=" border-2 md:navbar-end lg:navbar-end hidden sm:navbar-end">
-                 <div class=" flex justify-end items-center"><input type="text" placeholder="Search here" class="border-0 rounded-full py-4 pl-7 w-full bg-[#FFFFFF] relative"/>
+               <i class="fa-solid fa-magnifying-glass absolute pr-7"></i>
 
-                 <i class="fa-solid fa-magnifying-glass absolute pr-7"></i>
-                    
-                </div> 
+              </div> 
 
-            </div>
           </div>
-
+        </div>
         <!-- Banner section -->
-        <div class="static max-h-96">
+        <div class=" max-h-96 static">
           <div class="carousel w-full">
             <!-- slide-1 -->
             <div id="slide1" class="carousel-item relative w-full">
               <!-- hero1 -->
               <div class="flex items-center">
-                <div class="hero min-h-screen absolute">
+                <div class="hero max-h-96 absolute ">
                   <div class="hero-content text-center">
                     <div class=" text-center">
                       <h1 class="text-6xl font-bold text-[#FFFFFF]">Exotic tastes at your <br> doorstep</h1>
@@ -102,7 +96,7 @@
                   </div>
                 </div>
                 </div>
-                <img src="/images/banner1.png" class="w-full" />
+                <img src="./images/banner1.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide4" class="btn btn-circle">❮</a> 
                   <a href="#slide2" class="btn btn-circle">❯</a>
@@ -114,7 +108,7 @@
                 <div class="flex items-center">
                   <div class="hero min-h-screen absolute">
                     <div class="hero-content text-center">
-                      <div class="max-w-md text-center">
+                      <div class=" text-center">
                         <h1 class="text-6xl font-bold text-[#FFFFFF]">Exotic tastes at your <br> doorstep</h1>
                         <p class="py-6 text-[#FFFFFF]">We supply highly quality organic products</p>
                         <button class="btn btn-error bg-[#F85559] border-0  text-[#FFFFFF] py-4 px-7">Shop Now</button>
@@ -122,7 +116,7 @@
                     </div>
                   </div>
                 </div>
-                <img src="/images/banner2.png" class="w-full" />
+                <img src="./images/banner2.png" class="w-full" />
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a href="#slide1" class="btn btn-circle">❮</a> 
                   <a href="#slide3" class="btn btn-circle">❯</a>
@@ -133,7 +127,7 @@
                   <div class="flex items-center">
                     <div class="hero min-h-screen absolute">
                       <div class="hero-content text-center">
-                        <div class="max-w-md text-center">
+                        <div class=" text-center">
                           <h1 class="text-6xl font-bold text-[#FFFFFF]">Exotic tastes at your <br> doorstep</h1>
                           <p class="py-6 text-[#FFFFFF]">We supply highly quality organic products</p>
                           <button class="btn btn-error bg-[#F85559] border-0  text-[#FFFFFF] py-4 px-7">Shop Now</button>
@@ -141,7 +135,7 @@
                       </div>
                     </div>
                   </div>
-                  <img src="/images/banner3.png" class="w-full" />
+                  <img src="./images/banner3.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                     <a href="#slide2" class="btn btn-circle">❮</a> 
                     <a href="#slide4" class="btn btn-circle">❯</a>
@@ -152,7 +146,7 @@
                     <div class="flex items-center">
                       <div class="hero min-h-screen absolute">
                         <div class="hero-content text-center">
-                          <div class="max-w-md text-center">
+                          <div class=" text-center">
                             <h1 class="text-6xl font-bold text-[#FFFFFF]">Exotic tastes at your <br> doorstep</h1>
                             <p class="py-6 text-[#FFFFFF]">We supply highly quality organic products</p>
                             <button class="btn btn-error bg-[#F85559] border-0  text-[#FFFFFF] py-4 px-7">Shop Now</button>
@@ -160,7 +154,7 @@
                         </div>
                       </div>
                     </div>
-                    <img src="/images/banner4.png" class="w-full" />
+                    <img src="./images/banner4.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                       <a href="#slide3" class="btn btn-circle">❮</a> 
                       <a href="#slide1" class="btn btn-circle">❯</a>
@@ -172,24 +166,24 @@
         </div>
         <!-- bonus section -->
        <div class="max-w-6xl mx-auto">
-        <div class="sm:grid hidden grid-cols-1  md:grid-cols-3 lg:grid-cols-5 text-center absolute bg-white justify-between gap-20">
-          <div class="border-2 ">
+        <div class="sm:grid hidden grid-cols-1  md:grid-cols-3 lg:grid-cols-5 text-center relative bg-white justify-between gap-20 rounded-lg p-12">
+          <div class="rounded-lg">
             <img src="./images/fruit1.png" alt="">
             <h4>Strawberry</h4>
           </div>
-          <div class="border-2">
+          <div class="rounded-lg">
             <img src="./images/fruit2.png" alt="">
             <h4>Orange</h4>
           </div>
-          <div class="border-2 ">
+          <div class="rounded-lg ">
             <img src="./images/fruit3.png" alt="">
             <h4>Mango</h4>
           </div>
-          <div class="border-2 ">
+          <div class="rounded-lg ">
             <img src="./images/fruit4.png" alt="">
             <h4>Strawberry</h4>
           </div>
-         <div class="border-2 ">
+         <div class="rounded-lg ">
          <img src="./images/fruit5.png" alt="">
           <h4>Pomegranate</h4>
 
@@ -238,7 +232,7 @@
       <!-- card 1 -->
       <div class="card bg-[#FFF] rounded-lg shadow-xl border border-gray-400 py-12 px-15 mt-12">
         <figure class="px-10 pt-10">
-          <img src="/images/fruit6.png" alt="Apples" class="rounded-xl" />
+          <img src="./images/fruit6.png" alt="Apples" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center space-y-5">
           <h2 class="card-title mb-2 border-b ">12.90$ - 18.85$</h2>
@@ -291,7 +285,7 @@
         <!-- card 2 -->
         <div class="card bg-[#FFF] rounded-lg shadow-xl border border-gray-400 py-12 px-15 mt-12">
           <figure class="px-10 pt-10">
-            <img src="/images/fruit7.png" alt="Orange" class="rounded-xl" />
+            <img src="./images/fruit7.png" alt="Orange" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center space-y-5">
             <h2 class="card-title mb-2 border-b ">12.90$ - 18.85$</h2>
@@ -344,7 +338,7 @@
           <!-- card 3 -->
       <div class="card bg-[#FFF] rounded-lg shadow-xl border border-gray-400 py-12 px-15 mt-12">
         <figure class="px-10 pt-10">
-          <img src="/images/fruit8.png" alt="Red Dragon" class="rounded-xl" />
+          <img src="./images/fruit8.png" alt="Red Dragon" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center space-y-5">
           <h2 class="card-title mb-2 border-b ">12.90$ - 18.85$</h2>
@@ -398,7 +392,7 @@
         <!-- card 4 -->
         <div class="card bg-[#FFF] rounded-lg shadow-xl border border-gray-400 py-12 px-15 mt-12">
           <figure class="px-10 pt-10">
-            <img src="/images/fruit9.png" alt="Banana" class="rounded-xl" />
+            <img src="./images/fruit9.png" alt="Banana" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center space-y-5">
             <h2 class="card-title mb-2 border-b ">12.90$ - 18.85$</h2>
@@ -455,7 +449,7 @@
     </section>
     <!-- Fruits experts section -->
     <section class="mt-2 md:mt-6 lg:mt-10">
-      <div class="hero max-h-screen rounded-lg  " style="background-image: url('./images/team.png');">
+      <div class=" bg-cover bg-center hero max-h-screen rounded-lg  " style="background-image: url('./images/team.png');">
        
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content py-12 md:py-20 lg:py-28 ">
@@ -467,7 +461,7 @@
              <!-- experts 1 -->
         <div class="card shadow-xl">
           <figure class="px-10 pt-10">
-            <img src="/images/member1.png" alt="Shoes" class="rounded-xl" />
+            <img src="./images/member1.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Awlad Hossain</h2>
@@ -483,7 +477,7 @@
          <!-- experts 2 -->
          <div class="card shadow-xl">
           <figure class="px-10 pt-10">
-            <img src="/images/member2.png" alt="Shoes" class="rounded-xl" />
+            <img src="./images/member2.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Safia Chowdhury</h2>
@@ -499,7 +493,7 @@
          <!-- experts 3  -->
          <div class="card shadow-xl">
           <figure class="px-10 pt-10">
-            <img src="/images/member3.png" alt="Shoes" class="rounded-xl" />
+            <img src="./images/member3.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Rokib Hossain</h2>
@@ -515,7 +509,7 @@
          <!-- experts 4  -->
          <div class="card shadow-xl">
           <figure class="px-10 pt-10">
-            <img src="/images/member4.png" alt="Shoes" class="rounded-xl" />
+            <img src="./images/member4.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Chaity</h2>
