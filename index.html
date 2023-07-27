@@ -39,24 +39,25 @@
 
 </head>
 <body class="font-lato">
+  <!-- header section start -->
     <header class="max-w-screen-xl mx-auto">
          <!-- nav-ber section -->
-         <div class="navbar bg-[#F85559] border-0 rounded-full px-5 py-4 my-12 flex items-center">
+         <div class="navbar bg-white lg:bg-[#F85559] border-0 rounded-full px-5 py-4 my-12 flex items-center">
         
           <div class="navbar-start">
-            <div class="dropdown sm:hidden">
+            <div class="dropdown sm:hidden md:hidden">
              <label tabindex="0" class="btn btn-ghost btn-circle">
                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
              </label>
-             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[0] p-2 shadow bg-base-100 rounded-box">
+             <ul tabindex="0" class="menu menu-sm menu-md dropdown-content mt-3 z-[0] p-2 shadow bg-base-100 rounded-box">
                <li><a>Home</a></li>
                <li><a>About Us</a></li>
                <li><a>Shop</a></li>
                
              </ul>
            </div> 
-           <div class="navbar-start hidden md:flex lg:flex-col">
-             <ul class="menu menu-horizontal px-1">
+           <div class="navbar-start hidden md:flex md:flex-col lg:flex-col">
+             <ul class="menu menu-horizontal px-1 text-[#ffff]">
                <li><a>Home</a></li>
                <li><a>About Us</a></li>
                <li><a>Shop</a></li> 
@@ -67,13 +68,13 @@
          <div class="navbar-center">
 
              <div><img src="./images/logo.png" alt="logo"></div>
-              <div> <a class="btn btn-ghost normal-case text-4xl font-bold text-[#FFFFFF] ">Fruit Burst</a></div>
+              <div> <a class="btn btn-ghost normal-case text-4xl font-bold text-black lg:text-[#FFFFFF] ">Fruit Burst</a></div>
          </div>
          
           <div class="navbar-end">
-               <div class="flex justify-end items-center"><input type="text" placeholder="Search here" class="border-0 rounded-full py-4 pl-7 w-full bg-[#FFFFFF] relative"/>
+               <div class=" flex justify-end items-center"><input type="text" placeholder="Search here" class="border-0 rounded-full py-4 pl-7 w-full bg-[#FFFFFF] relative"/>
 
-               <i class="fa-solid fa-magnifying-glass absolute pr-7"></i>
+               <i class=" fa-solid fa-magnifying-glass absolute pr-7"></i>
 
               </div> 
 
@@ -86,11 +87,11 @@
             <div id="slide1" class="carousel-item relative w-full">
               <!-- hero1 -->
               <div class="flex items-center">
-                <div class="hero max-h-96 absolute ">
+                <div class="hero max-h-screen absolute ">
                   <div class="hero-content text-center">
                     <div class=" text-center">
-                      <h1 class="text-6xl font-bold text-[#FFFFFF]">Exotic tastes at your <br> doorstep</h1>
-                      <p class=" py-6 text-[#FFFFFF]">We supply highly quality organic products</p>
+                      <h1 class=" text-2xl lg:text-6xl font-bold text-[#FFFFFF]">Exotic tastes at your <br> doorstep</h1>
+                      <p class="sm:text-base py-6 text-[#FFFFFF]">We supply highly quality organic products</p>
                       <button class="btn btn-error bg-[#F85559] border-0  text-[#FFFFFF] py-4 px-7">Shop Now</button>
                     </div>
                   </div>
@@ -109,7 +110,7 @@
                   <div class="hero min-h-screen absolute">
                     <div class="hero-content text-center">
                       <div class=" text-center">
-                        <h1 class="text-6xl font-bold text-[#FFFFFF]">Exotic tastes at your <br> doorstep</h1>
+                        <h1 class="text-2xl lg:text-6xl font-bold text-[#FFFFFF]">Exotic tastes at your <br> doorstep</h1>
                         <p class="py-6 text-[#FFFFFF]">We supply highly quality organic products</p>
                         <button class="btn btn-error bg-[#F85559] border-0  text-[#FFFFFF] py-4 px-7">Shop Now</button>
                       </div>
@@ -128,7 +129,7 @@
                     <div class="hero min-h-screen absolute">
                       <div class="hero-content text-center">
                         <div class=" text-center">
-                          <h1 class="text-6xl font-bold text-[#FFFFFF]">Exotic tastes at your <br> doorstep</h1>
+                          <h1 class="text-2xl lg:text-6xl font-bold text-[#FFFFFF]">Exotic tastes at your <br> doorstep</h1>
                           <p class="py-6 text-[#FFFFFF]">We supply highly quality organic products</p>
                           <button class="btn btn-error bg-[#F85559] border-0  text-[#FFFFFF] py-4 px-7">Shop Now</button>
                         </div>
@@ -147,7 +148,7 @@
                       <div class="hero min-h-screen absolute">
                         <div class="hero-content text-center">
                           <div class=" text-center">
-                            <h1 class="text-6xl font-bold text-[#FFFFFF]">Exotic tastes at your <br> doorstep</h1>
+                            <h1 class="text-2xl lg:text-6xl font-bold text-[#FFFFFF]">Exotic tastes at your <br> doorstep</h1>
                             <p class="py-6 text-[#FFFFFF]">We supply highly quality organic products</p>
                             <button class="btn btn-error bg-[#F85559] border-0  text-[#FFFFFF] py-4 px-7">Shop Now</button>
                           </div>
@@ -166,33 +167,35 @@
         </div>
         <!-- bonus section -->
        <div class="max-w-6xl mx-auto">
-        <div class="sm:grid hidden grid-cols-1  md:grid-cols-3 lg:grid-cols-5 text-center relative bg-white justify-between gap-20 rounded-lg p-12">
+        <div class="sm:grid hidden grid-cols-1 lg:grid-cols-5 text-center relative bg-white justify-between gap-20 rounded-lg p-12">
           <div class="rounded-lg">
             <img src="./images/fruit1.png" alt="">
-            <h4>Strawberry</h4>
+            <h4 class="md:text-start lg:text-center">Strawberry</h4>
           </div>
           <div class="rounded-lg">
             <img src="./images/fruit2.png" alt="">
-            <h4>Orange</h4>
+            <h4 class="md:text-start lg:text-center">Orange</h4>
           </div>
           <div class="rounded-lg ">
             <img src="./images/fruit3.png" alt="">
-            <h4>Mango</h4>
+            <h4 class="md:text-start lg:text-center">Mango</h4>
           </div>
           <div class="rounded-lg ">
             <img src="./images/fruit4.png" alt="">
-            <h4>Strawberry</h4>
+            <h4 class="md:text-start lg:text-center">Strawberry</h4>
           </div>
          <div class="rounded-lg ">
          <img src="./images/fruit5.png" alt="">
-          <h4>Pomegranate</h4>
+          <h4 class="md:text-start lg:text-center">Pomegranate</h4>
 
         </div>
        </div>
     </header>
+    <!-- header section end  -->
+    <!-- main section start -->
     <main class="max-w-screen-xl mx-auto">
     <!-- start countdown section -->
-    <section class="lg:mt-56 flex flex-col md:flex-row lg:flex-row lg:items-center ">
+    <section class="lg:mt-20 flex flex-col md:flex-row lg:flex-row lg:items-center ">
                 <div class="flex-1 space-y-5">
                  <h3 class="text-[#121212] text-5xl font-extrabold ">Deal of the day</h3>
                  <p class="text-[#121212] text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -449,10 +452,10 @@
     </section>
     <!-- Fruits experts section -->
     <section class="mt-2 md:mt-6 lg:mt-10">
-      <div class=" bg-cover bg-center hero max-h-screen rounded-lg  " style="background-image: url('./images/team.png');">
+      <div class="max-h-screen bg-cover bg-center hero  rounded-lg  " style="background-image: url('./images/team.png');">
        
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content py-12 md:py-20 lg:py-28 ">
+        <div class="hero-overlay lg:bg-opacity-50"></div>
+        <div class="hero-content text-center text-neutral-content py-12 md:py-12 lg:py-12 ">
           <div class="max-w-full">
             <h3 class="mb-5 text-5xl font-extrabold text-[#ffff]">Meet the team section</h3>
             <p class=" text-[#ffff] text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -529,13 +532,13 @@
     </section>
 
     <!-- why chose section -->
-    <section class=" md:mt-12 lg:mt-20">
+    <section class="mt-96 pt-96 lg:pt-4 md:mt-12 lg:mt-20">
       <h2 class="text-center text-5xl font-extrabold text-[#121212]">Why Choose Us</h2>
       <p class=" mt-5 text-center text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
       <!-- text part -->
       <!-- text container 1 -->
      <div class=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 lg:my-10">
-      <div class=" mt-10 space-y-8">
+      <div class="mt-96 lg:mt-10 lg:space-y-8">
 
         <div class="flex justify-start items-center gap-3">
 
@@ -613,6 +616,7 @@
 
     
     </main>
+    <!-- main section end -->
     <!-- footer section  -->
     <footer>
       <footer class=" mt-12 footer footer-center py-24 lg:py-32 bg-[#121212] text-white">
